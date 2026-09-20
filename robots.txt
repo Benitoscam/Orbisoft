@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Benitoscam.github.io/orbisoft/sitemap.xml
