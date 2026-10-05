@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es-BO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Orbisoft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="design-system.css" />
+    <style>
+      .orb-topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .orb-avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: var(--orb-blue);
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.85rem;
+      }
+
+      .orb-search {
+        max-width: 320px;
+        flex: 1;
+      }
+
+      @media (max-width: 900px) {
+        .orb-search {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="orb-layout">
+      <!-- ============ SIDEBAR ============ -->
+      <aside class="orb-sidebar">
+        <a href="#" class="orb-logo" style="margin-bottom: 1.5rem; padding: 0 0.75rem">
+          <div class="orb-logo-mark">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+          ORBISOFT
+        </a>
+
+        <div class="orb-sidebar-section">General</div>
+        <a href="#" class="orb-sidebar-link active">
+          <span class="orb-sidebar-icon">📊</span> Dashboard
+        </a>
+        <a href="#" class="orb-sidebar-link">
+          <span class="orb-sidebar-icon">📦</span> Inventario
+        </a>
+        <a href="#" class="orb-sidebar-link">
+          <span class="orb-sidebar-icon">🧾</span> Ventas
+        </a>
+        <a href="#" class="orb-sidebar-link">
+          <span class="orb-sidebar-icon">👥</span> Clientes
+        </a>
+
+        <div class="orb-sidebar-section">Gestión</div>
+        <a href="#" class="orb-sidebar-link">
+          <span class="orb-sidebar-icon">📈</span> Reportes
+        </a>
+        <a href="#" class="orb-sidebar-link">
+          <span class="orb-sidebar-icon">⚙️</span> Configuración
+        </a>
+        <a href="#" class="orb-sidebar-link">
+          <span class="orb-sidebar-icon">❓</span> Ayuda
+        </a>
+
+        <div style="margin-top: auto; padding-top: 1.5rem">
+          <div class="orb-card orb-card-flat" style="padding: 1rem">
+            <div class="orb-badge orb-badge-success" style="margin-bottom: 0.6rem">
+              <span class="orb-dot"></span> Plan Estándar
+            </div>
+            <p class="orb-small orb-muted" style="margin-bottom: 0.75rem">
+              4 de 5 módulos activos
+            </p>
+            <a href="#" class="orb-btn orb-btn-secondary orb-btn-sm orb-btn-block"
+              >Mejorar plan</a
+            >
+          </div>
+        </div>
+      </aside>
+
+      <!-- ============ CONTENIDO ============ -->
+      <main class="orb-main">
+        <div class="orb-topbar">
+          <div class="orb-search">
+            <div class="orb-input-icon">
+              <span class="orb-icon">🔍</span>
+              <input
+                class="orb-input"
+                type="search"
+                placeholder="Buscar productos, clientes..."
+              />
+            </div>
+          </div>
+
+          <div class="orb-flex orb-gap-sm" style="gap: 1rem">
+            <button class="orb-btn orb-btn-secondary orb-btn-sm">🔔</button>
+            <div class="orb-flex orb-gap-sm" style="gap: 0.75rem; align-items: center">
+              <div class="orb-avatar">N</div>
+              <div class="orb-small">
+                <strong>Nataniel A.</strong><br />
+                <span class="orb-muted">Administrador</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="orb-h2" style="margin-bottom: 0.4rem">
+          Buenas tardes, Nataniel 👋
+        </h2>
+        <p class="orb-muted orb-mb">Aquí está el resumen de tu negocio hoy.</p>
+
+        <!-- ===== STATS ===== -->
+        <div class="orb-grid orb-grid-4" style="margin: 1.75rem 0">
+          <div class="orb-stat">
+            <div class="orb-stat-label">Ventas del mes</div>
+            <div class="orb-stat-value">Bs 48.250</div>
+            <div class="orb-stat-delta up">▲ +12.4% vs mes anterior</div>
+          </div>
+          <div class="orb-stat">
+            <div class="orb-stat-label">Órdenes</div>
+            <div class="orb-stat-value">342</div>
+            <div class="orb-stat-delta up">▲ +8.1% vs mes anterior</div>
+          </div>
+          <div class="orb-stat">
+            <div class="orb-stat-label">Clientes activos</div>
+            <div class="orb-stat-value">128</div>
+            <div class="orb-stat-delta up">▲ +5 nuevos</div>
+          </div>
+          <div class="orb-stat">
+            <div class="orb-stat-label">Stock bajo</div>
+            <div class="orb-stat-value" style="color: var(--orb-warning)">7</div>
+            <div class="orb-stat-delta down">▼ Requiere atención</div>
+          </div>
+        </div>
+
+        <!-- ===== ALERTA ===== -->
+        <div class="orb-alert orb-alert-warning">
+          <span>⚠️</span>
+          <div>
+            <strong>7 productos con stock bajo.</strong> Te sugerimos revisar el
+            inventario antes del fin de semana.
+          </div>
+        </div>
+
+        <!-- ===== TABLA ===== -->
+        <div class="orb-card-header">
+          <span class="orb-card-title">Últimas órdenes</span>
+          <a href="#" class="orb-small">Ver todas →</a>
+        </div>
+
+        <div class="orb-table-wrap" style="margin-bottom: 2rem">
+          <table class="orb-table">
+            <thead>
+              <tr>
+                <th># Orden</th>
+                <th>Cliente</th>
+                <th>Producto</th>
+                <th>Estado</th>
+                <th style="text-align: right">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="num">#1042</td>
+                <td>Clínica Sonrisa</td>
+                <td>Kit dental Pro</td>
+                <td>
+                  <span class="orb-badge orb-badge-success">Completado</span>
+                </td>
+                <td class="num" style="text-align: right">Bs 1.250</td>
+              </tr>
+              <tr>
+                <td class="num">#1041</td>
+                <td>Farmacia Central</td>
+                <td>Insumos varios</td>
+                <td>
+                  <span class="orb-badge orb-badge-warning">Pendiente</span>
+                </td>
+                <td class="num" style="text-align: right">Bs 890</td>
+              </tr>
+              <tr>
+                <td class="num">#1040</td>
+                <td>Dr. Mamani</td>
+                <td>Consulta + examen</td>
+                <td>
+                  <span class="orb-badge orb-badge-blue">En proceso</span>
+                </td>
+                <td class="num" style="text-align: right">Bs 450</td>
+              </tr>
+              <tr>
+                <td class="num">#1039</td>
+                <td>Taller El Sol</td>
+                <td>Servicio mensual</td>
+                <td>
+                  <span class="orb-badge orb-badge-danger">Cancelado</span>
+                </td>
+                <td class="num" style="text-align: right">Bs 300</td>
+              </tr>
+              <tr>
+                <td class="num">#1038</td>
+                <td>Comercial Andina</td>
+                <td>Pedido por mayor</td>
+                <td>
+                  <span class="orb-badge orb-badge-success">Completado</span>
+                </td>
+                <td class="num" style="text-align: right">Bs 5.600</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ===== CARDS DE ACCESO RÁPIDO ===== -->
+        <div class="orb-card-header">
+          <span class="orb-card-title">Accesos rápidos</span>
+        </div>
+
+        <div class="orb-grid orb-grid-3">
+          <a href="#" class="orb-card orb-card-interactive" style="text-decoration: none">
+            <div style="font-size: 1.6rem; margin-bottom: 0.6rem">➕</div>
+            <div class="orb-card-title" style="color: var(--orb-text)">
+              Nueva venta
+            </div>
+            <p class="orb-small orb-muted">Registra una venta rápidamente</p>
+          </a>
+          <a href="#" class="orb-card orb-card-interactive" style="text-decoration: none">
+            <div style="font-size: 1.6rem; margin-bottom: 0.6rem">👤</div>
+            <div class="orb-card-title" style="color: var(--orb-text)">
+              Nuevo cliente
+            </div>
+            <p class="orb-small orb-muted">Agrega un cliente a tu base</p>
+          </a>
+          <a href="#" class="orb-card orb-card-interactive" style="text-decoration: none">
+            <div style="font-size: 1.6rem; margin-bottom: 0.6rem">📄</div>
+            <div class="orb-card-title" style="color: var(--orb-text)">
+              Generar reporte
+            </div>
+            <p class="orb-small orb-muted">Descarga un reporte en PDF</p>
+          </a>
+        </div>
+
+        <footer class="orb-small" style="color: var(--orb-dim); margin-top: 3rem; text-align: center">
+          © 2026 Orbisoft · Sistema de gestión para negocios · La Paz, Bolivia
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
