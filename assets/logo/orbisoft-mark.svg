@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orbit-grad" x1="20" y1="120" x2="220" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00a3ff" stop-opacity="0.1" />
+      <stop offset="45%" stop-color="#00a3ff" stop-opacity="0.9" />
+      <stop offset="65%" stop-color="#c8c8c8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00a3ff" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow-orbit" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Back of Orbit Ring (Behind Cube) -->
+  <ellipse cx="120" cy="88" rx="88" ry="34" transform="rotate(-18 120 88)"
+    stroke="url(#orbit-grad)" stroke-width="2.5" stroke-dasharray="140 300" stroke-linecap="round" opacity="0.5" />
+
+  <!-- Top Layer Facets -->
+  <polygon points="120,44 135,52 120,60 105,52" fill="#e2e8f0" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="135,52 150,60 135,68 120,60" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="105,52 120,60 105,68 90,60" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="120,60 135,68 120,76 105,68" fill="#e2e8f0" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="150,60 165,68 150,76 135,68" fill="#94a3b8" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="90,60 105,68 90,76 75,68" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="135,68 150,76 135,84 120,76" fill="#38bdf8" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="105,68 120,76 105,84 90,76" fill="#cbd5e1" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="120,76 135,84 120,92 105,84" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+
+  <!-- Left Facet -->
+  <polygon points="75,70 90,78 90,96 75,88" fill="#0077b6" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="90,78 105,86 105,104 90,96" fill="#64748b" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="105,86 120,94 120,112 105,104" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="75,90 90,98 90,116 75,108" fill="#94a3b8" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="90,98 105,106 105,124 90,116" fill="#0096c7" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="105,106 120,114 120,132 105,124" fill="#475569" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="75,110 90,118 90,136 75,128" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="90,118 105,126 105,144 90,136" fill="#64748b" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="105,126 120,134 120,152 105,144" fill="#0284c7" stroke="#0a0a0a" stroke-width="1.5" />
+
+  <!-- Right Facet -->
+  <polygon points="120,94 135,86 135,104 120,112" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="135,86 150,78 150,96 135,104" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="150,78 165,70 165,88 150,96" fill="#94a3b8" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="120,114 135,106 135,124 120,132" fill="#334155" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="135,106 150,98 150,116 135,124" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="150,98 165,90 165,108 150,116" fill="#0096c7" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="120,134 135,126 135,144 120,152" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="135,126 150,118 150,136 135,144" fill="#64748b" stroke="#0a0a0a" stroke-width="1.5" />
+  <polygon points="150,118 165,110 165,128 150,136" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+
+  <!-- Front of Orbit Ring with Tech Particle -->
+  <path d="M 44,98 C 48,118 90,130 148,118 C 182,111 202,96 200,82"
+    stroke="url(#orbit-grad)" stroke-width="2.5" stroke-linecap="round" filter="url(#glow-orbit)" />
+  <circle cx="178" cy="110" r="3.5" fill="#00a3ff" />
+  <circle cx="178" cy="110" r="6" stroke="#00a3ff" stroke-width="1" opacity="0.6" />
+</svg>

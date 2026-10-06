@@ -5,6 +5,7 @@ Página web estática de Orbisoft. Lista para desplegar en **GitHub Pages** (gra
 ## Cómo subirla a GitHub Pages (5 minutos)
 
 ### 1. Crear repositorio en GitHub
+
 1. Entra a [github.com](https://github.com) e inicia sesión.
 2. Clic en **New repository**.
 3. Nombre recomendado: `orbisoft` o `orbisoft-web`.
@@ -13,15 +14,18 @@ Página web estática de Orbisoft. Lista para desplegar en **GitHub Pages** (gra
 6. Crea el repositorio.
 
 ### 2. Subir los archivos
+
 Puedes hacerlo de dos formas:
 
 **Opción A — Desde la web de GitHub (más fácil)**
+
 1. Entra al repositorio vacío.
 2. Clic en **uploading an existing file**.
 3. Arrastra el archivo `index.html` (y este README si quieres).
 4. Escribe un mensaje de commit (ej: "Primera versión de la web") y sube.
 
 **Opción B — Con Git (si ya sabes usarlo)**
+
 ```bash
 git init
 git add .
@@ -32,12 +36,13 @@ git push -u origin main
 ```
 
 ### 3. Activar GitHub Pages
+
 1. En tu repositorio ve a **Settings** → **Pages**.
 2. En "Source" elige **Deploy from a branch**.
 3. Branch: `main` / carpeta: `/ (root)`.
 4. Guarda.
 5. En 1-2 minutos tendrás tu URL pública:
-   **https://Benitoscam.github.io/orbisoft/**
+   **https://benitoscam.github.io/Orbisoft/**
 
 ## Datos ya actualizados
 
@@ -56,6 +61,7 @@ El formulario ya está preparado. Solo falta activarlo:
 5. Guarda y vuelve a subir el archivo.
 
 El formulario ya incluye:
+
 - Asunto personalizado del correo
 - Campo para poder responder directo al cliente
 - Protección anti-spam (honeypot)
@@ -70,6 +76,7 @@ El formulario ya incluye:
 - NAP consistente en footer (Nombre, WhatsApp, Email)
 
 ## Estructura
+
 - `index.html` → Toda la página (HTML + CSS + JS embebido)
 - `robots.txt` → Instrucciones para buscadores
 - `sitemap.xml` → Mapa del sitio

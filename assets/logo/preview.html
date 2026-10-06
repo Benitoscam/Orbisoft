@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es-BO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbisoft — Preview del Logo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --card: #141414;
+        --border: #2a2a2a;
+        --text: #f5f5f5;
+        --muted: #a0a0a0;
+        --blue: #00a3ff;
+        --silver: #c8c8c8;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        padding: 3rem 1.5rem;
+        line-height: 1.6;
+      }
+      .wrap { max-width: 1100px; margin: 0 auto; }
+      h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 0.25rem; }
+      .sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem; }
+      .mono { font-family: "JetBrains Mono", monospace; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.5rem;
+      }
+      .card h3 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--blue);
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+      .stage {
+        background: #0d0d0d;
+        border: 1px solid #1f1f1f;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        min-height: 220px;
+        gap: 1rem;
+      }
+      .stage.light { background: #f5f5f5; border-color: #e0e0e0; }
+      .stage.plain { background: transparent; border-style: dashed; }
+
+      .wordmark {
+        font-weight: 800;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .wordmark .dot {
+        width: 7px; height: 7px; border-radius: 50%;
+        background: var(--blue);
+        display: inline-block;
+        margin-left: 0.15rem;
+      }
+      .wordmark.dark { color: #0a0a0a; }
+
+      .lockup { display: flex; align-items: center; gap: 1.25rem; }
+      .lockup svg { width: 110px; height: 82px; flex-shrink: 0; }
+
+      .sizes { display: flex; align-items: flex-end; gap: 2rem; }
+      .sizes figure { text-align: center; }
+      .sizes figcaption {
+        font-size: 0.7rem;
+        color: var(--muted);
+        margin-top: 0.5rem;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .palette { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+      .sw {
+        flex: 1; min-width: 130px;
+        border-radius: 12px; overflow: hidden;
+        border: 1px solid var(--border);
+      }
+      .sw .chip { height: 70px; }
+      .sw .meta { padding: 0.6rem 0.75rem; font-size: 0.78rem; }
+      .sw .meta b { display: block; font-weight: 600; }
+      .sw .meta span { color: var(--muted); font-family: "JetBrains Mono", monospace; }
+
+      .note {
+        background: rgba(0, 163, 255, 0.08);
+        border: 1px solid rgba(0, 163, 255, 0.25);
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-top: 2rem;
+      }
+      .note b { color: var(--text); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Orbisoft — Preview del Logo</h1>
+      <p class="sub">Variante 01 · Cubo en órbita isométrico · <span class="mono">assets/logo/orbisoft-mark.svg</span></p>
+
+      <!-- SVG Symbol definido una sola vez -->
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+          <symbol id="orb-mark" viewBox="0 0 240 180">
+            <linearGradient id="orbit-grad" x1="20" y1="120" x2="220" y2="50" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00a3ff" stop-opacity="0.1" />
+              <stop offset="45%" stop-color="#00a3ff" stop-opacity="0.9" />
+              <stop offset="65%" stop-color="#c8c8c8" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#00a3ff" stop-opacity="0.2" />
+            </linearGradient>
+            <filter id="glow-orbit" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+            <ellipse cx="120" cy="88" rx="88" ry="34" transform="rotate(-18 120 88)"
+              stroke="url(#orbit-grad)" stroke-width="2.5" stroke-dasharray="140 300" stroke-linecap="round" opacity="0.5" />
+            <polygon points="120,44 135,52 120,60 105,52" fill="#e2e8f0" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="135,52 150,60 135,68 120,60" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="105,52 120,60 105,68 90,60" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="120,60 135,68 120,76 105,68" fill="#e2e8f0" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="150,60 165,68 150,76 135,68" fill="#94a3b8" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="90,60 105,68 90,76 75,68" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="135,68 150,76 135,84 120,76" fill="#38bdf8" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="105,68 120,76 105,84 90,76" fill="#cbd5e1" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="120,76 135,84 120,92 105,84" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="75,70 90,78 90,96 75,88" fill="#0077b6" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="90,78 105,86 105,104 90,96" fill="#64748b" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="105,86 120,94 120,112 105,104" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="75,90 90,98 90,116 75,108" fill="#94a3b8" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="90,98 105,106 105,124 90,116" fill="#0096c7" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="105,106 120,114 120,132 105,124" fill="#475569" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="75,110 90,118 90,136 75,128" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="90,118 105,126 105,144 90,136" fill="#64748b" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="105,126 120,134 120,152 105,144" fill="#0284c7" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="120,94 135,86 135,104 120,112" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="135,86 150,78 150,96 135,104" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="150,78 165,70 165,88 150,96" fill="#94a3b8" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="120,114 135,106 135,124 120,132" fill="#334155" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="135,106 150,98 150,116 135,124" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="150,98 165,90 165,108 150,116" fill="#0096c7" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="120,134 135,126 135,144 120,152" fill="#00a3ff" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="135,126 150,118 150,136 135,144" fill="#64748b" stroke="#0a0a0a" stroke-width="1.5" />
+            <polygon points="150,118 165,110 165,128 150,136" fill="#c8c8c8" stroke="#0a0a0a" stroke-width="1.5" />
+            <path d="M 44,98 C 48,118 90,130 148,118 C 182,111 202,96 200,82"
+              stroke="url(#orbit-grad)" stroke-width="2.5" stroke-linecap="round" filter="url(#glow-orbit)" />
+            <circle cx="178" cy="110" r="3.5" fill="#00a3ff" />
+            <circle cx="178" cy="110" r="6" stroke="#00a3ff" stroke-width="1" opacity="0.6" />
+          </symbol>
+        </defs>
+      </svg>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Solo el mark</h3>
+          <div class="stage"><svg width="240" height="180"><use href="#orb-mark" /></svg></div>
+        </div>
+
+        <div class="card">
+          <h3>Lockup horizontal (navbar)</h3>
+          <div class="stage">
+            <div class="lockup">
+              <svg viewBox="0 0 240 180"><use href="#orb-mark" /></svg>
+              <span class="wordmark">Orbisoft<span class="dot"></span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Sobre fondo claro</h3>
+          <div class="stage light">
+            <div class="lockup">
+              <svg viewBox="0 0 240 180"><use href="#orb-mark" /></svg>
+              <span class="wordmark dark">Orbisoft<span class="dot"></span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tamaños (favicon 16 → hero 128)</h3>
+          <div class="stage">
+            <div class="sizes">
+              <figure><svg width="16" height="16" viewBox="0 0 240 180"><use href="#orb-mark" /></svg><figcaption>16px</figcaption></figure>
+              <figure><svg width="32" height="32" viewBox="0 0 240 180"><use href="#orb-mark" /></svg><figcaption>32px</figcaption></figure>
+              <figure><svg width="64" height="64" viewBox="0 0 240 180"><use href="#orb-mark" /></svg><figcaption>64px</figcaption></figure>
+              <figure><svg width="128" height="128" viewBox="0 0 240 180"><use href="#orb-mark" /></svg><figcaption>128px</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:2rem">
+        <h3>Paleta de marca</h3>
+        <div class="palette">
+          <div class="sw"><div class="chip" style="background:#00a3ff"></div><div class="meta"><b>Azul Orbisoft</b><span>#00A3FF</span></div></div>
+          <div class="sw"><div class="chip" style="background:#c8c8c8"></div><div class="meta"><b>Plata</b><span>#C8C8C8</span></div></div>
+          <div class="sw"><div class="chip" style="background:#0a0a0a"></div><div class="meta"><b>Negro base</b><span>#0A0A0A</span></div></div>
+          <div class="sw"><div class="chip" style="background:#141414"></div><div class="meta"><b>Tarjeta</b><span>#141414</span></div></div>
+        </div>
+      </div>
+
+      <div class="note">
+        <b>Archivos generados:</b> <span class="mono">assets/logo/orbisoft-mark.svg</span> — SVG vectorial listo para favicon, navbar, og-image y papelería.
+        Este preview es solo para verificación visual; no forma parte de la web pública.
+      </div>
+    </div>
+  </body>
+</html>

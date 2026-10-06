@@ -55,10 +55,11 @@
 
     <meta name="theme-color" content="#0a0a0a" />
 
-    <!-- Favicon temporal (cubo 3x3) -->
+    <!-- Favicon oficial (cubo en órbita — Variante 01) -->
     <link
       rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='10' y='10' width='25' height='25' fill='%23c0c0c0'/><rect x='40' y='10' width='25' height='25' fill='%2300a3ff'/><rect x='70' y='10' width='25' height='25' fill='%23c0c0c0'/><rect x='10' y='40' width='25' height='25' fill='%2300a3ff'/><rect x='40' y='40' width='25' height='25' fill='%23c0c0c0'/><rect x='70' y='40' width='25' height='25' fill='%2300a3ff'/><rect x='10' y='70' width='25' height='25' fill='%23c0c0c0'/><rect x='40' y='70' width='25' height='25' fill='%2300a3ff'/><rect x='70' y='70' width='25' height='25' fill='%23c0c0c0'/></svg>"
+      type="image/svg+xml"
+      href="assets/logo/orbisoft-mark.svg"
     />
 
     <!-- Schema.org LocalBusiness + ProfessionalService (SEO Local) -->
@@ -208,31 +209,10 @@
       }
 
       .logo-icon {
-        width: 36px;
-        height: 36px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 2px;
-      }
-
-      .logo-icon span {
-        border-radius: 2px;
-      }
-
-      .logo-icon span:nth-child(1),
-      .logo-icon span:nth-child(3),
-      .logo-icon span:nth-child(5),
-      .logo-icon span:nth-child(7),
-      .logo-icon span:nth-child(9) {
-        background: var(--silver);
-      }
-
-      .logo-icon span:nth-child(2),
-      .logo-icon span:nth-child(4),
-      .logo-icon span:nth-child(6),
-      .logo-icon span:nth-child(8) {
-        background: var(--blue);
+        width: 44px;
+        height: 33px;
+        display: block;
+        flex-shrink: 0;
       }
 
       .nav-links {
@@ -723,9 +703,19 @@
       }
 
       .footer-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
         font-weight: 700;
         font-size: 1.2rem;
+        letter-spacing: 0.32em;
         margin-bottom: 0.5rem;
+      }
+
+      .footer-logo img {
+        width: 40px;
+        height: 30px;
       }
 
       .footer-tagline {
@@ -777,10 +767,13 @@
     <nav>
       <div class="nav-inner">
         <a href="#" class="logo">
-          <div class="logo-icon">
-            <span></span><span></span><span></span> <span></span><span></span
-            ><span></span> <span></span><span></span><span></span>
-          </div>
+          <img
+            src="assets/logo/orbisoft-mark.svg"
+            alt="Orbisoft"
+            class="logo-icon"
+            width="44"
+            height="33"
+          />
           ORBISOFT
         </a>
         <button
@@ -1138,7 +1131,10 @@
     <!-- FOOTER -->
     <footer>
       <div class="footer-inner">
-        <div class="footer-logo">ORBISOFT</div>
+        <div class="footer-logo">
+          <img src="assets/logo/orbisoft-mark.svg" alt="Orbisoft" />
+          ORBISOFT
+        </div>
         <div class="footer-tagline">
           Soluciones que conectan · Ideas · Sistemas · Resultados
         </div>
