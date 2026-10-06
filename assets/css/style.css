@@ -354,6 +354,139 @@ section {
   font-size: 0.95rem;
 }
 
+/* ===== ABOUT / NOSOTROS ===== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-lead {
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.about-lead span {
+  color: var(--blue);
+}
+
+.about-story p {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  margin-bottom: 1rem;
+}
+
+.about-story p:last-child {
+  margin-bottom: 0;
+}
+
+/* Valores */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.value-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  transition: all 0.3s;
+}
+
+.value-card:hover {
+  border-color: rgba(0, 163, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.value-icon {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.value-card h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.35rem;
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Equipo */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.team-card:hover {
+  border-color: rgba(0, 163, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+.team-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: #0a0a0a;
+  background: linear-gradient(135deg, var(--silver) 0%, var(--blue) 100%);
+  border: 3px solid var(--border);
+  box-shadow: 0 0 30px var(--blue-glow);
+}
+
+.team-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.team-role {
+  color: var(--blue) !important;
+  font-weight: 600;
+  font-size: 0.9rem !important;
+  margin-bottom: 0.9rem !important;
+}
+
+.team-card p {
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.team-card a {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.team-card a:hover {
+  text-decoration: underline;
+}
+
 /* ===== PROCESS ===== */
 .process-steps {
   display: grid;
@@ -634,6 +767,15 @@ footer {
 
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero {

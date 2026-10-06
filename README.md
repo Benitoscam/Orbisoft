@@ -46,7 +46,7 @@ git push -u origin main
 
 ## Datos ya actualizados
 
-- Nombre: **Natanei Ricardo Alarcon Aduviri**
+- Nombre: **Nataniel Ricardo Alarcon Aduviri**
 - WhatsApp: **+591 705 61683**
 - Correo: **orbisoftapps@gmail.com**
 
