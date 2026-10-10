@@ -6,4 +6,16 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://benitoscam.github.io/Orbisoft/control-de-gastos/</loc>
+    <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://benitoscam.github.io/Orbisoft/control-de-gastos/privacidad.html</loc>
+    <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://benitoscam.github.io/Orbisoft/control-de-gastos/condiciones.html</loc>
+    <lastmod>2026-10-10</lastmod>
+  </url>
 </urlset>

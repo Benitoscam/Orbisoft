@@ -77,7 +77,7 @@ El formulario ya incluye:
 
 ## Estructura
 
-- `index.html` → Toda la página (HTML + CSS + JS embebido)
+- `index.html` → Página principal; estilos en `assets/css/style.css` y comportamiento en `assets/js/main.js`
 - `robots.txt` → Instrucciones para buscadores
 - `sitemap.xml` → Mapa del sitio
 - No necesita base de datos ni servidor.
@@ -85,3 +85,43 @@ El formulario ya incluye:
 ---
 
 Hecho con ❤️ para Orbisoft · La Paz, Bolivia
+
+
+## Control de Gastos — páginas informativas
+
+Sección independiente en `control-de-gastos/`: presentación (`index.html`),
+privacidad (`privacidad.html`) y condiciones (`condiciones.html`).
+Reutiliza los tokens y el logo de BRAND.md; `site.css` limita sus reglas a
+`.expense-site`. No altera el menú ni la página principal y no distribuye APK.
+Las páginas funcionan sin JavaScript y contienen enlaces recíprocos y contacto.
+
+Las declaraciones se contrastaron con LocalService, DriveBackupService y la
+configuración de fuentes de la app el 10 de octubre de 2026. Mantenerlas
+actualizadas cuando cambie el tratamiento de datos. Desconectar cierra sesión;
+revocar permisos y eliminar respaldos son operaciones independientes.
+
+### Comprobar y publicar
+
+Servir la raíz con `python -m http.server 8080` y abrir
+`http://localhost:8080/control-de-gastos/`. Revisar también las dos páginas
+legales, sus enlaces y la presentación en móvil antes de publicar.
+
+GitHub Pages continúa sirviendo la raíz del repositorio. Para Cloudflare Pages,
+importar este mismo repositorio, elegir la rama que se quiera publicar, sin
+framework ni compilación y con la raíz como directorio de salida del sitio.
+Revisar qué archivos de la raíz serán públicos antes del despliegue: el
+repositorio contiene también documentos y un ZIP previo; no añadir secretos.
+Ningún despliegue, commit o push forma parte de estos cambios locales.
+
+Las URLs canónicas y sitemap conservan `https://benitoscam.github.io/Orbisoft/`.
+Si se elige otra dirección principal, actualizar las canónicas, og:url,
+sitemap y robots.txt de forma coordinada.
+
+URLs previstas de la app una vez publicados estos cambios:
+- https://benitoscam.github.io/Orbisoft/control-de-gastos/
+- https://benitoscam.github.io/Orbisoft/control-de-gastos/privacidad.html
+- https://benitoscam.github.io/Orbisoft/control-de-gastos/condiciones.html
+
+Publicar estas páginas no confirma la aprobación de OAuth. Revisar el estado
+de Google Cloud y sus requisitos con las URLs definitivas. Drive se describe
+en pruebas hasta que el propietario confirme su cambio a producción.
